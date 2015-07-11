@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+  head
+    title Food App
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible",content="IE=edge")
+    meta(name="viewport",content="width=device-width,initial-scale=1")
+    link(rel="stylesheet",href="../css/lib/bootstrap/css/bootstrap.min.css" )
+    //link(rel="stylesheet",href="css/lib/normalize/normalize.css")
+    link(rel="stylesheet",href="../css/main.css")
+  body
+    video(autoplay,loop,poster="images/home-video-poster.jpg",id="bgvid")
+      source(src="../video/home-intro.webm",type="video/webm")
+      source(src="../video/home-intro.mp4",type="video/mp4")
+    div(class="ap-header text-center")
+      h2 TBD
+    div(class="getstart-button")
+      a get started
+      a already a member? sign in
+    script(src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js")
+    script(type="text/javascript").
+      $('video').on('ended', function () {
+        this.load();
+        this.play();
+      });
