@@ -1,0 +1,29 @@
+div(class="modal fade",id="login",tabindex="-1",role="dialog",aria-labelledby="myModalLabel")
+  div(class="modal-dialog app-modal-sm",role="document")
+    div(class="modal-content app-modal")
+      div(class="modal-header text-center")
+        button(type="button",class="close",data-dismiss="modal",aria-label="Close")
+          span(aria-hidden="true") X
+        h4(class="modal-title",id="myModalLabel") TBD
+      div(class="modal-body text-center")
+        div(class="inform")
+          hr
+          span(id="inform-status") let's get started
+          hr
+        div(class="inform-describe")
+          h4(id="inform-describe") Enter your email address
+        form(class="",role="form",id="getstart-step1",onsubmit="return App.getStart('1')")
+          div(class="form-group")
+            input(class="form-control",required,placeholder="Email Address",type="email")
+            button(class="btn btn-block app-black",type="submit") NEXT
+        form(class="hide",id="getstart-step2",role="form",onsubmit="return App.getStart('2')")
+          div(class="form-group")
+            input(class="form-control app-col-50 pull-left",required,placeholder="First Name")
+            input(class="form-control app-col-50 pull-right",required,placeholder="Last Name")
+            div(class="clearfix")
+          div(class="form-group")
+            input(class="form-control",required,placeholder="Phone")
+          div(class="form-group")
+            input(class="form-control",required,placeholder="Password",type="password")
+          button(class="btn btn-block app-black",type="submit") SEE MENU
+
