@@ -1,4 +1,5 @@
-$font_name:Bebas;
+@import 'variable';
+@import 'mixins';
 video#bgvid {
   position: fixed;
   top: 50%;
@@ -13,12 +14,107 @@ video#bgvid {
   background: url('../images/home-video-poster.jpg');
   background-size: cover;
 }
+.getstart-button{
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+.getstart-button .getstart{
+  position: relative;
+  display: inline-block;
+  outline: none;
+  font-family: BebasNeue,Helvetica,sans-serif;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  padding: 0.7em 2em;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  padding: 10px 80px;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.getstart-button .getstart:hover{
+  background: $color-hover;
+  border: 1px solid $color-hover;
+  color:#000;
+}
+.getstart-button a:nth-child(2){
+  font-family: BebasNeue,Helvetica,sans-serif;
+  letter-spacing: 0.05em;
+  border-bottom: 1px dotted #9a9a9a;
+  cursor: pointer;
+  color:#fff;
+  display: inline-block;
+}
+.getstart-button a{
+  border-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
 @font-face{
   font-family:Bebas;
   src:url(../fonts/BebasNeue.ttf);
 }
 body{
   font-family:$font_name;
+}
+.app-modal{
+  border-radius: 0px;
+}
+.app-modal .modal-body{
+  margin: 0 40px;
+}
+.app-modal-sm{
+  width:430px;
+}
+.app-modal .modal-header{
+  border-bottom: 0;
+}
+.app-modal form input,.app-modal form button{
+  height: 40px;
+}
+.app-modal form button{
+  margin-top: 10px;
+}
+.app-modal form input{
+  font-family: sans-serif;
+}
+.app-modal hr{
+  width: 20%;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+.app-modal .inform-describe{
+  font-family: Georgia;
+}
+.app-modal .app-col-50{
+  display: inline-block;
+  width:48%;
+}
+.app-modal .inform span{
+  font-size: 56px;
+  font-weight: bold;
+  letter-spacing: 2.79999995231628px;
+  line-height: 56px;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 60%;
+}
+.app-black{
+  background-color:$black;
+  color:#fff;
+}
+.app-black:hover{
+  color:#fff;
+  opacity: 0.8;
 }
 /*# sourceMappingURL=main.css.map */
 
